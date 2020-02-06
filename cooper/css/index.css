@@ -134,6 +134,10 @@ table {
 .flex {
   display: flex;
 }
+.flexLeft {
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
 .flexRow {
   display: flex;
   flex-flow: row wrap;
@@ -147,10 +151,33 @@ table {
   font-family: 'Roboto', sans-serif;
   color: #282425;
 }
+.contentImage {
+  height: 80%;
+  width: auto;
+  border-radius: 50px;
+}
+.contentText {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  border-radius: 10px;
+  padding: 3%;
+}
+.contentText p {
+  margin: 5% 0;
+  padding: 20px 10px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+.contentSections {
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
 html,
 body {
   height: 100%;
-  background: url(/cooper/assets/background.jpg);
+  background: url(/assets/background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -240,16 +267,16 @@ header .logo {
   border-radius: 10px;
   padding: 3%;
 }
-.intro .content:hover .fa-chevron-down {
-  -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
-}
 .intro .content p {
   margin: 5% 0;
   padding: 20px 10px;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
+}
+.intro .content:hover .fa-chevron-down {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
 }
 .intro .content .fa-chevron-down {
   display: flex;
@@ -258,6 +285,107 @@ header .logo {
 }
 .contentContainer {
   background: #EEEDF3;
+  display: flex;
+  flex-flow: row wrap;
+}
+.contentContainer img {
+  height: 80%;
+  width: auto;
+  border-radius: 50px;
+}
+.contentContainer .skills,
+.contentContainer .achievements {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+.contentContainer .skills .content,
+.contentContainer .achievements .content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  border-radius: 10px;
+  padding: 3%;
+}
+.contentContainer .skills .content p,
+.contentContainer .achievements .content p {
+  margin: 5% 0;
+  padding: 20px 10px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+.contentContainer .experience {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  background: #ffffff;
+}
+.contentContainer .experience .content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  border-radius: 10px;
+  padding: 3%;
+}
+.contentContainer .experience .content p {
+  margin: 5% 0;
+  padding: 20px 10px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+.contentContainer .contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  background: #ffffff;
+}
+.contentContainer .contact .content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  border-radius: 10px;
+  padding: 3%;
+  line-height: 2;
+}
+.contentContainer .contact .content p {
+  margin: 5% 0;
+  padding: 20px 10px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+.contentContainer .contact .content .address {
+  font-size: 1.2rem;
+}
+.contentContainer .contact .content .socialMedia {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.contentContainer .contact .content .socialMedia a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: #282425;
+}
+.contentContainer .contact .content .socialMedia .icons {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.contentContainer footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 2%;
+}
+.contentContainer footer .copyright {
+  font-size: 0.9rem;
 }
 section {
   display: flex;
